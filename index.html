@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Leitor de Texto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de Texto Acessível</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Leitor de Texto com Acessibilidade</h2>
+    <div class="container">
+        <h1>Leitor de Texto Acessível</h1>
 
-<p id="texto">
-Este é um exemplo de leitura de texto usando a Web Speech API.
-</p>
+        <p id="texto">
+            Este é um exemplo de leitura de texto utilizando a Web Speech API.
+            O sistema garante que apenas uma leitura aconteça por vez,
+            evitando sobreposição de áudio quando o usuário clica várias vezes no botão.
+        </p>
 
-<button onclick="lerTexto()">
-Ler conteúdo
-</button>
+        <button onclick="lerTexto()">
+            🔊 Ler conteúdo
+        </button>
+    </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
